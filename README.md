@@ -24,8 +24,20 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Tech Stack
+## Things Being Used
 
-- Create React App
-- Sass
-- CSS Modules
+### Tech
+
+- [Create React App](https://create-react-app.dev/)
+- [Sass](https://create-react-app.dev/docs/adding-a-sass-stylesheet)
+- [CSS Modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/)
+- [PostCSS Normalize](https://github.com/csstools/postcss-normalize)
+
+### Tools
+
+- [Prettier](https://create-react-app.dev/docs/setting-up-your-editor#formatting-code-automatically)
+- [Storybook](https://storybook.js.org/)
+
+### Methodologies
+
+- [Component Driven Development](https://www.componentdriven.org/)

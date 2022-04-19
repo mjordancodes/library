@@ -4,6 +4,8 @@ This file brings in global styles used for the project. Individual components wi
 
 */
 
+@import-normalize; /* bring in normalize.css styles */
+
 body {
   font-family: sans-serif;
 }
