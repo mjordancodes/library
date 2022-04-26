@@ -31,13 +31,18 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - [Create React App](https://create-react-app.dev/)
 - [Sass](https://create-react-app.dev/docs/adding-a-sass-stylesheet)
 - [CSS Modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/)
-- [PostCSS Normalize](https://github.com/csstools/postcss-normalize)
 
 ### Tools
 
 - [Prettier](https://create-react-app.dev/docs/setting-up-your-editor#formatting-code-automatically)
 - [Storybook](https://storybook.js.org/)
+- [PostCSS Normalize](https://github.com/csstools/postcss-normalize)
 
 ### Methodologies
 
 - [Component Driven Development](https://www.componentdriven.org/)
+
+### Tutorials/Guides
+
+- [Building a Complete App with Airtable and React - Upmostly](https://upmostly.com/tutorials/create-simple-web-app-react-airtable)
+- [Build a simple component with Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react/en/simple-component/)

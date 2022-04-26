@@ -1,7 +1,8 @@
 import "./assets/styles/style.scss";
+import HomePage from "./pages/Home";
 
 function App() {
-  return <div>React App</div>;
+  return <HomePage />;
 }
 
 export default App;
