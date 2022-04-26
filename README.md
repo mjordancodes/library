@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project uses a local .env file + environment variables stored in Netlify. To get it running for you, you would need to create a workspace + tables in airtable to match what I am using and then set your own secret api key in those places for it to properly get data.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -37,6 +39,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - [Prettier](https://create-react-app.dev/docs/setting-up-your-editor#formatting-code-automatically)
 - [Storybook](https://storybook.js.org/)
 - [PostCSS Normalize](https://github.com/csstools/postcss-normalize)
+- Airtable
 
 ### Methodologies
 
