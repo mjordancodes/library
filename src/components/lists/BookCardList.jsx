@@ -1,8 +1,9 @@
+import styles from "./bookcardlist.module.scss";
 import BookCard from "../cards/BookCard";
 import { matchById } from "../../utilities/combineData";
 
 const BookCardList = ({ books, authors }) => (
-  <div className="card-list">
+  <div className={styles.cardList}>
     {books.map((book, i) => {
       let bookAuthors = [];
       book.fields.author.map((author, i) => {

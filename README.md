@@ -26,6 +26,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run storybook`
+
+Runs the storybook part of the app in development mode at [http://localhost:6006](http://localhost:6006)
+
 ## Things Being Used
 
 ### Tech
@@ -48,4 +52,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### Tutorials/Guides
 
 - [Building a Complete App with Airtable and React - Upmostly](https://upmostly.com/tutorials/create-simple-web-app-react-airtable)
+- [Make an API Call with a Secret Key](https://www.pluralsight.com/guides/hiding-secret-keys-in-create-react-app)
 - [Build a simple component with Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react/en/simple-component/)

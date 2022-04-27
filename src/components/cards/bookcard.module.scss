@@ -1,0 +1,39 @@
+.bookCard {
+  border: 2px solid black;
+  img {
+    max-width: 100%;
+  }
+  .body {
+    padding: 5px;
+
+    p {
+      margin: 0;
+    }
+
+    .title {
+      font-size: 1.25em;
+    }
+
+    .info {
+      font-size: 0.85em;
+    }
+    .genreList {
+      display: flex;
+      flex-wrap: wrap;
+      li::after {
+        content: ", ";
+        margin-right: 0.25em;
+      }
+      // remove comma from after last item in genreList
+      :last-of-type::after {
+        content: "";
+      }
+    }
+  }
+}
+
+.bookCard.simple {
+  .info {
+    display: none;
+  }
+}

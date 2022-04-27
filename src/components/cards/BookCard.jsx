@@ -1,24 +1,32 @@
+import styles from "./bookcard.module.scss";
+
 const BookCard = ({ book, authors }) => (
-  <div className="book-card">
-    <div className="card-body">
-      <p className="book-title">{book.title}</p>
+  <div className={`${styles.bookCard} ${styles.simple}`}>
+    {book.coverImage && <img src={book.coverImage[0].url} alt="book cover" />}
+
+    <div className={styles.body}>
+      <p className={styles.title}>{book.title}</p>
 
       {book.series && (
-        <p className="book-series">
+        <p>
           {book.series} #{book.seriesNumber}
         </p>
       )}
 
-      <p className="book-author">{authors[0].full}</p>
+      <p className={styles.author}>{authors[0].full}</p>
 
-      <ul className="book-genres">
-        {book.genres.map((genre, i) => {
-          return <li key={i}>{genre}</li>;
-        })}
-      </ul>
+      <div className={styles.info}>
+        {book.genres && (
+          <ul className={`${styles.genreList} no-style-list`}>
+            {book.genres.map((genre, i) => {
+              return <li key={i}>{genre}</li>;
+            })}
+          </ul>
+        )}
 
-      <p className="book-pages">Pages: {book.pages}</p>
-      <p className="book-shelf">Shelf: {book.shelf}</p>
+        {book.pages && <p>Pages: {book.pages}</p>}
+        {book.shelf && <p>Shelf: {book.shelf}</p>}
+      </div>
     </div>
   </div>
 );
