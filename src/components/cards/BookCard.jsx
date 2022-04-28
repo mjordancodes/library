@@ -13,7 +13,11 @@ const BookCard = ({ book, authors }) => (
         </p>
       )}
 
-      <p className={styles.author}>{authors[0].full}</p>
+      <p className={styles.author}>
+        {authors.map((author, i) => {
+          return author.fullName;
+        })}
+      </p>
 
       <div className={styles.info}>
         {book.genres && (
