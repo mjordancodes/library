@@ -6,6 +6,9 @@ This file brings in global styles used for the project. Individual components wi
 
 @import-normalize; /* bring in normalize.css styles */
 
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: sans-serif;
 }
@@ -14,4 +17,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.btn {
 }

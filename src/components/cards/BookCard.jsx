@@ -1,12 +1,16 @@
 import styles from "./bookcard.module.scss";
 
 const BookCard = ({ book, authors }) => (
-  <div className={`${styles.bookCard} ${styles.simple}`}>
-    {book.coverImage && <img src={book.coverImage[0].url} alt="book cover" />}
+  <div className={`${styles.bookCard} ${styles.full}`}>
+    <div className={styles.imgContainer}>
+      {book.coverImage && <img src={book.coverImage[0].url} alt="book cover" />}
+    </div>
 
-    <div className={styles.body}>
+    <div className={styles.cardHeader}>
       <p className={styles.title}>{book.title}</p>
+    </div>
 
+    <div className={styles.cardBody}>
       {book.series && (
         <p>
           {book.series} #{book.seriesNumber}
@@ -17,9 +21,10 @@ const BookCard = ({ book, authors }) => (
         {authors.map((author, i) => {
           return author.fullName;
         })}
+        AUTHOR NAME
       </p>
 
-      <div className={styles.info}>
+      <div className={styles.extraInfo}>
         {book.genres && (
           <ul className={`${styles.genreList} no-style-list`}>
             {book.genres.map((genre, i) => {

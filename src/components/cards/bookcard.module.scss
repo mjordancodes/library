@@ -1,32 +1,44 @@
 .bookCard {
   border: 2px solid black;
-  img {
-    max-width: 100%;
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: auto auto 1fr;
+  grid-template-rows: subgrid;
+  gap: 0;
+  p {
+    margin: 0;
   }
-  .body {
-    padding: 5px;
 
-    p {
-      margin: 0;
+  .imgContainer {
+    img {
+      width: 100%;
     }
+  }
 
-    .title {
-      font-size: 1.25em;
-    }
+  .cardHeader {
+    font-size: 1.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .info {
+  .cardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .extraInfo {
       font-size: 0.85em;
-    }
-    .genreList {
-      display: flex;
-      flex-wrap: wrap;
-      li::after {
-        content: ", ";
-        margin-right: 0.25em;
-      }
-      // remove comma from after last item in genreList
-      :last-of-type::after {
-        content: "";
+      .genreList {
+        display: flex;
+        flex-wrap: wrap;
+        li::after {
+          content: ", ";
+          margin-right: 0.25em;
+        }
+        // remove comma from after last item in genreList
+        :last-of-type::after {
+          content: "";
+        }
       }
     }
   }

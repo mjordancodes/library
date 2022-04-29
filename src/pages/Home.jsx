@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { getAllAuthors, getAllOfTable } from "../utilities/fetchData";
+import { getAllOfTable } from "../utilities/fetchData";
 import BookCardList from "../components/lists/BookCardList";
 
 const HomePage = () => {
   const [Books, setBooks] = useState(null);
   const [Authors, setAuthors] = useState(null);
+  const [Loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (!Books) {
@@ -17,13 +18,18 @@ const HomePage = () => {
         setAuthors(Authors);
       });
     }
+    if (Books && Authors) {
+      setLoading(false);
+    }
   });
 
   return (
     <div>
       <h2>All Books</h2>
 
-      {Books && Authors && <BookCardList books={Books} authors={Authors} />}
+      {Loading && <p>Loading data...</p>}
+
+      {!Loading && <BookCardList books={Books} authors={Authors} />}
     </div>
   );
 };
