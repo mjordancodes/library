@@ -1,7 +1,7 @@
 import styles from "./bookcard.module.scss";
 
 const BookCard = ({ book, authors }) => (
-  <div className={`${styles.bookCard} ${styles.full}`}>
+  <div className={`${styles.bookCard} ${styles.full}`} key={book.id}>
     <div className={styles.imgContainer}>
       {book.coverImage && <img src={book.coverImage} alt="book cover" />}
     </div>
@@ -18,7 +18,7 @@ const BookCard = ({ book, authors }) => (
     <div className={styles.cardBody}>
       <p className={styles.author}>
         {authors.map((author, i) => {
-          return <span>{author}</span>;
+          return <span key="i">{author}</span>;
         })}
       </p>
 

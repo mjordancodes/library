@@ -9,6 +9,11 @@
     margin: 0;
   }
 
+  .cardHeader,
+  .cardBody {
+    padding: 0 0.8em 0.5em;
+  }
+
   .imgContainer {
     background: black;
     display: flex;
@@ -24,7 +29,7 @@
     font-size: 1.25em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     p:not(.title) {
