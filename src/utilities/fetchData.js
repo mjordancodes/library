@@ -31,6 +31,7 @@ export async function getAllOfTable(table) {
         }
       }
     );
+
   if (allRecords !== []) {
     return allRecords;
   }

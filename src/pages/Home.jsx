@@ -21,7 +21,7 @@ const HomePage = () => {
     if (Books && Authors) {
       setLoading(false);
     }
-  });
+  }, [Books, Authors]);
 
   return (
     <div>
