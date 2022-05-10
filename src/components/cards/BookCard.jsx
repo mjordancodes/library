@@ -18,7 +18,7 @@ const BookCard = ({ book, authors }) => (
     <div className={styles.cardBody}>
       <p className={styles.author}>
         {authors.map((author, i) => {
-          return <span key="i">{author}</span>;
+          return <span key={i}>{author}</span>;
         })}
       </p>
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getAllOfTable } from "../utilities/fetchData";
+import { getAllOfTable, getAllBooksSorted } from "../utilities/fetchData";
 import BookCardList from "../components/lists/BookCardList";
 
 const HomePage = () => {
@@ -9,7 +9,7 @@ const HomePage = () => {
 
   useEffect(() => {
     if (!Books) {
-      getAllOfTable("books").then((Books) => {
+      getAllBooksSorted().then((Books) => {
         setBooks(Books);
       });
     }
@@ -28,18 +28,13 @@ const HomePage = () => {
       <h2>All Books</h2>
 
       {Loading && <p>Loading data...</p>}
-      {/* 
+
       {!Loading && (
         <div>
-          {Books.map((book) => {
-            return (
-              <p key={book["_rawJson"].id}>{book["_rawJson"].fields.title}</p>
-            );
-          })}
+          <p>Total Books Shown: {Books.length}</p>
+          <BookCardList books={Books} authors={Authors} />
         </div>
-      )} */}
-
-      {!Loading && <BookCardList books={Books} authors={Authors} />}
+      )}
     </div>
   );
 };
