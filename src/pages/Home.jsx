@@ -28,6 +28,16 @@ const HomePage = () => {
       <h2>All Books</h2>
 
       {Loading && <p>Loading data...</p>}
+      {/* 
+      {!Loading && (
+        <div>
+          {Books.map((book) => {
+            return (
+              <p key={book["_rawJson"].id}>{book["_rawJson"].fields.title}</p>
+            );
+          })}
+        </div>
+      )} */}
 
       {!Loading && <BookCardList books={Books} authors={Authors} />}
     </div>
