@@ -13,7 +13,7 @@ export async function getAllBooksSorted() {
         { field: "title", direction: "desc" },
       ],
     })
-    .firstPage();
+    .all();
 
   return records;
 }

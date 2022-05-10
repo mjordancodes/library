@@ -53,5 +53,6 @@ Runs the storybook part of the app in development mode at [http://localhost:6006
 ### Tutorials/Guides
 
 - [Building a Complete App with Airtable and React - Upmostly](https://upmostly.com/tutorials/create-simple-web-app-react-airtable)
+- [Airtable API cURL and JavaScript - YouTube Video](https://youtu.be/snl_OQbm3UI)
 - [Make an API Call with a Secret Key](https://www.pluralsight.com/guides/hiding-secret-keys-in-create-react-app)
 - [Build a simple component with Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react/en/simple-component/)
