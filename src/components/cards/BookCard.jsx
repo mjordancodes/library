@@ -8,18 +8,17 @@ const BookCard = ({ book, authors }) => (
 
     <div className={styles.cardHeader}>
       <p className={styles.title}>{book.title}</p>
-    </div>
-
-    <div className={styles.cardBody}>
       {book.series && (
         <p>
           {book.series} #{book.seriesNumber}
         </p>
       )}
+    </div>
 
+    <div className={styles.cardBody}>
       <p className={styles.author}>
         {authors.map((author, i) => {
-          return author;
+          return <span>{author}</span>;
         })}
       </p>
 

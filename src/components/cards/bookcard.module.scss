@@ -4,12 +4,17 @@
   grid-row: span 3;
   grid-template-rows: auto auto 1fr;
   grid-template-rows: subgrid;
-  gap: 0;
+  gap: 5px;
   p {
     margin: 0;
   }
 
   .imgContainer {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     img {
       width: 100%;
     }
@@ -18,14 +23,32 @@
   .cardHeader {
     font-size: 1.25em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    p:not(.title) {
+      font-size: 1rem;
+    }
   }
 
   .cardBody {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    .author {
+      margin-bottom: 1em;
+      text-align: center;
+      span {
+        display: block;
+      }
+      span::after {
+        content: ", ";
+      }
+      span:last-of-type::after {
+        content: "";
+      }
+    }
     .extraInfo {
       font-size: 0.85em;
       .genreList {
