@@ -1,6 +1,6 @@
 import styles from "./bookcardlist.module.scss";
-import BookCard from "../cards/BookCard";
-import { matchById } from "../../utilities/combineData";
+import BookCard from "../../cards/BookCard/BookCard";
+import { matchById } from "../../../utilities/combineData";
 
 const BookCardList = ({ books, authors }) => (
   <div className={styles.cardList}>

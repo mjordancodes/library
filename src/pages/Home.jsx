@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { getAllOfTable, getAllBooksSorted } from "../utilities/fetchData";
-import BookCardList from "../components/lists/BookCardList";
+import BookCardList from "../components/lists/BookCardList/BookCardList";
 
 const HomePage = () => {
   const [Books, setBooks] = useState(null);
@@ -31,7 +31,12 @@ const HomePage = () => {
 
       {!Loading && (
         <div>
-          <p>Total Books Shown: {Books.length}</p>
+          <aside>
+            <h3>Library Stats:</h3>
+            <p>Total Books Shown: {Books.length}</p>
+            <p>Total Authors Shown: {Authors.length}</p>
+          </aside>
+
           <BookCardList books={Books} authors={Authors} />
         </div>
       )}
