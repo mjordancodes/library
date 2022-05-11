@@ -21,8 +21,8 @@ Standard.args = {
     pages: "146",
     shelf: "Read",
     id: "rec1SubL4v9MAtVNa",
+    authors: ["Collin Higgins"],
   },
-  authors: ["Collin Higgins"],
   complexity: "full",
 };
 
@@ -38,8 +38,8 @@ FullComplexity.args = {
     pages: "861",
     shelf: "Read",
     id: "rec1ns3LMYKEkrc4S",
+    authors: ["Robert Jordan", "Brandon Sanderson"],
   },
-  authors: ["Robert Jordan", "Brandon Sanderson"],
   complexity: "full",
 };
 
@@ -55,8 +55,8 @@ SimpleComplexity.args = {
     pages: "861",
     shelf: "Read",
     id: "rec1ns3LMYKEkrc4S",
+    authors: ["Robert Jordan", "Brandon Sanderson"],
   },
-  authors: ["Robert Jordan", "Brandon Sanderson"],
   complexity: "simple",
 };
 
@@ -72,7 +72,7 @@ CoverOnly.args = {
     pages: "861",
     shelf: "Read",
     id: "rec1ns3LMYKEkrc4S",
+    authors: ["Robert Jordan", "Brandon Sanderson"],
   },
-  authors: ["Robert Jordan", "Brandon Sanderson"],
   complexity: "coverOnly",
 };

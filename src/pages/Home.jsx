@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getAllOfTable, getAllBooksSorted } from "../utilities/fetchData";
-import BookCardList from "../components/lists/BookCardList/BookCardList";
+import BookCardList from "../components/lists/book-list/BookList";
+import { matchById } from "../utilities/combineData";
 
 const HomePage = () => {
   const [Books, setBooks] = useState(null);
@@ -10,7 +11,25 @@ const HomePage = () => {
   useEffect(() => {
     if (!Books) {
       getAllBooksSorted().then((Books) => {
-        setBooks(Books);
+        let formattedBooks = [];
+        Books.map((book) => {
+          // pull out the data needed for each book
+          let bookObject = {};
+          bookObject.title = book["_rawJson"].fields.title;
+          bookObject.coverImage = book["_rawJson"].fields.coverImage[0].url;
+          bookObject.series = book["_rawJson"].fields.series;
+          bookObject.seriesNumber = book["_rawJson"].fields.seriesNumber;
+          bookObject.genres = book["_rawJson"].fields.genres;
+          bookObject.pages = book["_rawJson"].fields.pages;
+          bookObject.shelf = book["_rawJson"].fields.shelf;
+          bookObject.id = book["_rawJson"].id;
+          bookObject.authorIds = book["_rawJson"].fields.author;
+          bookObject.authors = [];
+
+          formattedBooks.push(bookObject);
+          return formattedBooks;
+        });
+        setBooks(formattedBooks);
       });
     }
     if (!Authors) {
@@ -19,6 +38,16 @@ const HomePage = () => {
       });
     }
     if (Books && Authors) {
+      Books.map((book) => {
+        let bookAuthors = [];
+        book.authorIds.map((author) => {
+          let authorObject = matchById(Authors, author);
+          bookAuthors.push(authorObject["_rawJson"].fields.fullName);
+          return bookAuthors;
+        });
+        book.authors = bookAuthors;
+        return book;
+      });
       setLoading(false);
     }
   }, [Books, Authors]);
@@ -37,7 +66,7 @@ const HomePage = () => {
             <p>Total Authors Shown: {Authors.length}</p>
           </aside>
 
-          <BookCardList books={Books} authors={Authors} />
+          <BookCardList books={Books} />
         </div>
       )}
     </div>

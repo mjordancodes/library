@@ -1,7 +1,7 @@
 import styles from "./bookcard.module.scss";
 import clsx from "clsx";
 
-const BookCard = ({ book, authors, complexity }) => (
+const BookCard = ({ book, complexity }) => (
   <div
     className={clsx(
       styles.bookCard,
@@ -26,7 +26,7 @@ const BookCard = ({ book, authors, complexity }) => (
 
     <div className={styles.cardBody}>
       <p className={styles.author}>
-        {authors.map((author, i) => {
+        {book.authors.map((author, i) => {
           return <span key={i}>{author}</span>;
         })}
       </p>
