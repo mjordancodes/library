@@ -25,7 +25,12 @@ const BookCardList = ({ books, authors }) => (
       });
 
       return (
-        <BookCard book={bookObject} key={bookObject.id} authors={bookAuthors} />
+        <BookCard
+          book={bookObject}
+          key={bookObject.id}
+          authors={bookAuthors}
+          complexity="full"
+        />
       );
     })}
   </div>

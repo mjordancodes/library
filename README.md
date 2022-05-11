@@ -45,6 +45,7 @@ Runs the storybook part of the app in development mode at [http://localhost:6006
 - [Storybook](https://storybook.js.org/)
 - [PostCSS Normalize](https://github.com/csstools/postcss-normalize)
 - Airtable
+- [clsx - npm package for conditional class naming](https://www.npmjs.com/package/clsx)
 
 ### Methodologies
 

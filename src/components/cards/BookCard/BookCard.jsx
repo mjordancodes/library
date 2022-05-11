@@ -1,7 +1,16 @@
 import styles from "./bookcard.module.scss";
+import clsx from "clsx";
 
-const BookCard = ({ book, authors }) => (
-  <div className={`${styles.bookCard} ${styles.full}`} key={book.id}>
+const BookCard = ({ book, authors, complexity }) => (
+  <div
+    className={clsx(
+      styles.bookCard,
+      complexity === "full" && styles.full,
+      complexity === "simple" && styles.simple,
+      complexity === "coverOnly" && styles.coverOnly
+    )}
+    key={book.id}
+  >
     <div className={styles.imgContainer}>
       {book.coverImage && <img src={book.coverImage} alt="book cover" />}
     </div>
@@ -24,7 +33,7 @@ const BookCard = ({ book, authors }) => (
 
       <div className={styles.extraInfo}>
         {book.genres && (
-          <ul className={`${styles.genreList} no-style-list`}>
+          <ul className={styles.genreList}>
             {book.genres.map((genre, i) => {
               return <li key={i}>{genre}</li>;
             })}
