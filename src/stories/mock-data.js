@@ -1,0 +1,196 @@
+export const bookWithOutSeries = {
+  title: "Harold and Maude",
+  coverImage:
+    "https://dl.airtable.com/.attachments/eef100159ffc8d8e02d04a457cb481ab/44b95df2/482977.jpg?ts=1652214348&userId=usrW5DzrssXZF00Yv&cs=058b708650c575e8",
+  series: undefined,
+  seriesNumber: undefined,
+  genres: ["Fiction", "Humor"],
+  pages: "146",
+  shelf: "Read",
+  id: "rec1SubL4v9MAtVNa",
+  authors: ["Collin Higgins"],
+};
+
+export const bookWithSeries = {
+  title: "The Gathering Storm",
+  coverImage:
+    "https://dl.airtable.com/.attachments/a6e92f7e75d78092c15bc6fd75c4b33e/f025b980/1166599._SY475_.jpg?ts=1652214348&userId=usrW5DzrssXZF00Yv&cs=5cb177c873d48bc8",
+  series: "The Wheel of Time",
+  seriesNumber: "12",
+  genres: ["Fantasy", "Fiction", "Adventure"],
+  pages: "861",
+  shelf: "Read",
+  id: "rec1ns3LMYKEkrc4S",
+  authors: ["Robert Jordan", "Brandon Sanderson"],
+};
+
+export const bookListFullSeries = [
+  {
+    title: "The Eye of the World",
+    coverImage:
+      "https://dl.airtable.com/.attachments/13a4f1515b9e808ba2197dc0c91e4411/c90123c2/228665.jpg?ts=1652299209&userId=usrW5DzrssXZF00Yv&cs=468891ffd3a24c5b",
+    series: "The Wheel of Time",
+    seriesNumber: "1",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "753",
+    shelf: "Read",
+    id: "rectc7NrjC4iBKpP2",
+    authors: ["Robert Jordan"],
+  },
+  {
+    title: "The Great Hunt",
+    coverImage:
+      "https://dl.airtable.com/.attachments/cbca3e31c456156039d17060b93a4c6b/c83d3d2c/233649._SY475_.jpg?ts=1652299209&userId=usrW5DzrssXZF00Yv&cs=c795d3729c897351",
+    series: "The Wheel of Time",
+    seriesNumber: "2",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "658",
+    shelf: "Read",
+    id: "recGd6CSVFdkDtTs0",
+    authors: ["Robert Jordan"],
+  },
+  {
+    title: "The Dragon Reborn",
+    coverImage:
+      "https://dl.airtable.com/.attachments/346312dc8ade7d9c1699dee6a762cd37/250bad33/34897._SX318_.jpg?ts=1652299209&userId=usrW5DzrssXZF00Yv&cs=93855dd337a9ee3d",
+    series: "The Wheel of Time",
+    seriesNumber: "3",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "632",
+    shelf: "Read",
+    id: "recWuFcJKVocuc7R3",
+    authors: ["Robert Jordan"],
+  },
+  {
+    title: "The Shadow Rising",
+    coverImage:
+      "https://dl.airtable.com/.attachments/ab11bd0409ebef93b1fa746833a9b9cc/d7c40905/9539._SY475_.jpg?ts=1652299209&userId=usrW5DzrssXZF00Yv&cs=05c67b577c68eebc",
+    series: "The Wheel of Time",
+    seriesNumber: "4",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "1032",
+    shelf: "Read",
+    id: "recltG7KlsP6UMogT",
+    authors: ["Robert Jordan"],
+  },
+  {
+    title: "The Fires of Heaven",
+    coverImage:
+      "https://dl.airtable.com/.attachments/88d634803e6b5620ed0b91d0c379ac3b/0f38994d/140975._SY475_.jpg?ts=1652299209&userId=usrW5DzrssXZF00Yv&cs=c91cafd7387cdf1c",
+    series: "The Wheel of Time",
+    seriesNumber: "5",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "926",
+    shelf: "Read",
+    id: "reciLhVuu88afDajZ",
+    authors: ["Robert Jordan"],
+  },
+  {
+    title: "The Lord of Chaos",
+    coverImage:
+      "https://dl.airtable.com/.attachments/9845857a4406e0826e874bcd6a859e7a/5bec7cb1/35231._SY475_.jpg?ts=1652299209&userId=usrW5DzrssXZF00Yv&cs=4badf6f9ce7aa994",
+    series: "The Wheel of Time",
+    seriesNumber: "6",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "732",
+    shelf: "Read",
+    id: "rece6I6T5e9K9Ul2l",
+    authors: ["Robert Jordan"],
+  },
+  {
+    title: "A Crown of Swords",
+    coverImage:
+      "https://dl.airtable.com/.attachments/514f7a745bd6bd1529f8605ea8a38736/3ccd6f9f/13890.jpg?ts=1652299209&userId=usrW5DzrssXZF00Yv&cs=dd6b00605d7f37e7",
+    series: "The Wheel of Time",
+    seriesNumber: "7",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "902",
+    shelf: "Read",
+    id: "rectbaZD6eKC6dl9y",
+    authors: ["Robert Jordan"],
+  },
+  {
+    title: "The Path of Daggers",
+    coverImage:
+      "https://dl.airtable.com/.attachments/b077fcf944831a4ebea1c14fb32a472a/80268c8c/140974.jpg?ts=1652299209&userId=usrW5DzrssXZF00Yv&cs=cc836321bc31653f",
+    series: "The Wheel of Time",
+    seriesNumber: "8",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "669",
+    shelf: "Read",
+    id: "recWCDVOSKticVXxJ",
+    authors: ["Robert Jordan"],
+  },
+  {
+    title: "Winter's Heart",
+    coverImage:
+      "https://dl.airtable.com/.attachments/35724515a040b843100c63fecd32a972/7cf6a9ef/13891._SY475_.jpg?ts=1652299209&userId=usrW5DzrssXZF00Yv&cs=6f8b58e2423d7de0",
+    series: "The Wheel of Time",
+    seriesNumber: "9",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "705",
+    shelf: "Read",
+    id: "recUScIniPMWJ26lu",
+    authors: ["Robert Jordan"],
+  },
+  {
+    title: "Crossroads of Twilight",
+    coverImage:
+      "https://dl.airtable.com/.attachments/1585bb8e4f57fa8dfcb9524c468cf032/e083efd2/113435._SY475_.jpg?ts=1652299209&userId=usrW5DzrssXZF00Yv&cs=dcc74771e7d99a07",
+    series: "The Wheel of Time",
+    seriesNumber: "10",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "627",
+    shelf: "Read",
+    id: "recUScIniPMWJ26lu",
+    authors: ["Robert Jordan"],
+  },
+  {
+    title: "Knife of Dreams",
+    coverImage:
+      "https://dl.airtable.com/.attachments/e734692ff2cfafab4abe7644ccca1f30/0c31fe70/13888.jpg?ts=1652299209&userId=usrW5DzrssXZF00Yv&cs=2bbfc6a5a626b1c8",
+    series: "The Wheel of Time",
+    seriesNumber: "11",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "886",
+    shelf: "Read",
+    id: "rec2nEK8rf3W0notZ",
+    authors: ["Robert Jordan"],
+  },
+  {
+    title: "The Gathering Storm",
+    coverImage:
+      "https://dl.airtable.com/.attachments/a6e92f7e75d78092c15bc6fd75c4b33e/f025b980/1166599._SY475_.jpg?ts=1652214348&userId=usrW5DzrssXZF00Yv&cs=5cb177c873d48bc8",
+    series: "The Wheel of Time",
+    seriesNumber: "12",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "861",
+    shelf: "Read",
+    id: "rec1ns3LMYKEkrc4S",
+    authors: ["Robert Jordan", "Brandon Sanderson"],
+  },
+  {
+    title: "Towers of Midnight",
+    coverImage:
+      "https://dl.airtable.com/.attachments/ee5753902d9cec83c0465b65ac18db70/75c51990/8253920.jpg?ts=1652299209&userId=usrW5DzrssXZF00Yv&cs=319145ab35f44e07",
+    series: "The Wheel of Time",
+    seriesNumber: "13",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "865",
+    shelf: "Read",
+    id: "recdmVdceEYViD1jM",
+    authors: ["Robert Jordan", "Brandon Sanderson"],
+  },
+  {
+    title: "A Memory of Light",
+    coverImage:
+      "https://dl.airtable.com/.attachments/ee00d6f15f5bfd5a5dc75b32a07b576e/7875bf50/7743175._SX318_.jpg?ts=1652299209&userId=usrW5DzrssXZF00Yv&cs=579ac04dea78fb5c",
+    series: "The Wheel of Time",
+    seriesNumber: "14",
+    genres: ["Fantasy", "Fiction", "Adventure"],
+    pages: "1025",
+    shelf: "Read",
+    id: "recLy4u7r7GsnENY8",
+    authors: ["Robert Jordan", "Brandon Sanderson"],
+  },
+];

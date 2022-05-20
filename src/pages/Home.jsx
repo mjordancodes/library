@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { getAllOfTable, getAllBooksSorted } from "../utilities/fetchData";
-import BookCardList from "../components/lists/book-list/BookList";
+import BookList from "../components/lists/book-list/BookList";
 import { matchById } from "../utilities/combineData";
 
 const HomePage = () => {
@@ -66,7 +66,7 @@ const HomePage = () => {
             <p>Total Authors Shown: {Authors.length}</p>
           </aside>
 
-          <BookCardList books={Books} />
+          <BookList books={Books} />
         </div>
       )}
     </div>

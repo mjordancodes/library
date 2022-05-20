@@ -1,12 +1,13 @@
 .bookCard,
 .bookCard.full {
   border: 2px solid black;
-  max-width: 399px;
   display: grid;
   grid-row: span 3;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: min-content auto auto;
   grid-template-rows: subgrid;
   gap: 5px;
+  width: fit-content;
+  margin: 0 auto;
   p {
     margin: 0;
   }
@@ -24,6 +25,7 @@
 
     img {
       width: 100%;
+      max-width: 400px;
     }
   }
 
