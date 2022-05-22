@@ -60,12 +60,6 @@ const HomePage = () => {
 
       {!Loading && (
         <div>
-          <aside>
-            <h3>Library Stats:</h3>
-            <p>Total Books Shown: {Books.length}</p>
-            <p>Total Authors Shown: {Authors.length}</p>
-          </aside>
-
           <BookList books={Books} />
         </div>
       )}
