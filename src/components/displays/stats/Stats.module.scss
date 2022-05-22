@@ -1,0 +1,16 @@
+.stats {
+  width: clamp(300px, 40vw, 100vw);
+  p {
+    margin: 0;
+    display: inline-block;
+    padding-right: 20px;
+  }
+  h3,
+  h4 {
+    margin-bottom: 0;
+  }
+  .shelves {
+    display: flex;
+    justify-content: space-between;
+  }
+}
