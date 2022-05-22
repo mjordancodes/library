@@ -8,14 +8,14 @@ export default {
 
 const Template = (args) => <BookCard {...args} />;
 
-export const Standard = Template.bind({});
-Standard.args = {
+export const StandardWithoutSeries = Template.bind({});
+StandardWithoutSeries.args = {
   book: bookWithOutSeries,
   complexity: "full",
 };
 
-export const FullComplexity = Template.bind({});
-FullComplexity.args = {
+export const StandardWithSeries = Template.bind({});
+StandardWithSeries.args = {
   book: bookWithSeries,
   complexity: "full",
 };
@@ -30,4 +30,10 @@ export const CoverOnly = Template.bind({});
 CoverOnly.args = {
   book: bookWithSeries,
   complexity: "coverOnly",
+};
+
+export const NoCover = Template.bind({});
+NoCover.args = {
+  book: bookWithSeries,
+  complexity: "noCover",
 };

@@ -7,7 +7,8 @@ const BookCard = ({ book, complexity }) => (
       styles.bookCard,
       complexity === "full" && styles.full,
       complexity === "simple" && styles.simple,
-      complexity === "coverOnly" && styles.coverOnly
+      complexity === "coverOnly" && styles.coverOnly,
+      complexity === "noCover" && styles.noCover
     )}
     key={book.id}
   >

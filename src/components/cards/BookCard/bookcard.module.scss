@@ -7,7 +7,6 @@
   grid-template-rows: subgrid;
   gap: 5px;
   width: fit-content;
-  margin: 0 auto;
   p {
     margin: 0;
   }
@@ -89,6 +88,13 @@
 .bookCard.coverOnly {
   .cardHeader,
   .cardBody {
+    display: none;
+  }
+}
+
+.bookCard.noCover {
+  .imgContainer,
+  .extraInfo {
     display: none;
   }
 }
