@@ -25,6 +25,10 @@
     img {
       width: 100%;
       max-width: 400px;
+      // fakes subgrid alignment with various image sizes because
+      // chrome refuses to support it yet.
+      aspect-ratio: 1/1.8;
+      object-fit: contain;
     }
   }
 
