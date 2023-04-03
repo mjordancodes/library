@@ -17,7 +17,11 @@ const HomePage = () => {
           // pull out the data needed for each book
           let bookObject = {};
           bookObject.title = book["_rawJson"].fields.title;
-          bookObject.coverImage = book["_rawJson"].fields.coverImage[0].url;
+          if (book["_rawJson"].fields.coverImage) {
+            bookObject.coverImage = book["_rawJson"].fields.coverImage[0].url;
+          } else {
+            bookObject.coverImage = "";
+          }
           bookObject.series = book["_rawJson"].fields.series;
           bookObject.seriesNumber = book["_rawJson"].fields.seriesNumber;
           bookObject.genres = book["_rawJson"].fields.genres;
@@ -28,6 +32,7 @@ const HomePage = () => {
           bookObject.authors = [];
 
           formattedBooks.push(bookObject);
+
           return formattedBooks;
         });
         setBooks(formattedBooks);

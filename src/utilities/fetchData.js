@@ -19,7 +19,7 @@ export async function getAllBooksSorted() {
 }
 
 export async function getAllOfTable(table) {
-  const records = await base(table).select().firstPage();
+  const records = await base(table).select().all();
 
   return records;
 }
